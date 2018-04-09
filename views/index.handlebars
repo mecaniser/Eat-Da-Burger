@@ -1,0 +1,41 @@
+<h1>Eat_Da_Burger</h1>
+
+<main>
+    <div class="containe">
+        <div class="row">
+            <div class="col s6">
+                {{#each brgrs}}
+                {{#unless this.devoured}}
+                <div>
+                    <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                    <button type="submit" class="get_da_brgr">{{this.brgr_name}}</button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+
+            <div class="col s6">
+                {{#each brgrs}}
+                {{#if this.devoured}}
+                <div class="brgrConsumed">
+                    <div>
+                        {{this.brgr_name}}
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</main>
+
+<h3>Add a Burger Selection</h3>
+
+<div class="row">
+    <div class="col s12">
+        <form action="/burgers" method="post">
+        <input type="text" id="name" name="brgr_name" placeholder="Ya delicious Burrrrgar">
+        </form>
+    </div>
+</div>

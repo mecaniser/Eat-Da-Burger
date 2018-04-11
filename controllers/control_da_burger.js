@@ -11,23 +11,22 @@ router.get('/', function (req, res) {
         var nhdlbrsObj = {
             burgers: info
         };
-        console.log(nhdlbrsObj);
+        // console.log(nhdlbrsObj);
         res.render("index", nhdlbrsObj);
     });
 });
 
-router.post('/api/burgers', function (req, res) {
+router.post('/burgers', function (req, res) {
     da_burger.create([
         'brgr_name'
     ], [
         req.body.brgr_name
-    ], function (res_info) {
-        // res_info.redirect('/');
-        res_info.json({id: res_info.insertId});
+    ], function (info) {
+        res.redirect('/');
     });
 });
 
-router.put('/api/burgers/:id', function (req, res) {
+router.put('/burgers/:id', function (req, res) {
     var condition = 'id = ' + req.params.id;
     console.log("condition", condition);
 
@@ -37,7 +36,7 @@ router.put('/api/burgers/:id', function (req, res) {
         res.redirect('/');
     });
 });
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     da_burger.delete(condition, function(result) {

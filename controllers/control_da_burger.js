@@ -12,17 +12,18 @@ router.get('/', function (req, res) {
             burgers: info
         };
         console.log(nhdlbrsObj);
-        res.render('index', nhdlbrsObj);
+        res.render("index", nhdlbrsObj);
     });
 });
 
-router.post('/burgers', function (req, res) {
+router.post('/api/burgers', function (req, res) {
     da_burger.create([
         'brgr_name'
     ], [
         req.body.brgr_name
-    ], function (info) {
-        res.redirect('/');
+    ], function (res_info) {
+        // res_info.redirect('/');
+        res_info.json({id: res_info.insertId});
     });
 });
 

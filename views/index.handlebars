@@ -1,10 +1,10 @@
-<h1>Eat_Da_Burger</h1>
+<h1>Eat Da Burger</h1>
 
 <main>
-    <div class="containe">
+    <div class="container">
         <div class="row">
             <div class="col s6">
-                {{#each brgrs}}
+                {{#each burgers}}
                 {{#unless this.devoured}}
                 <div>
                     <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
@@ -16,7 +16,7 @@
             </div>
 
             <div class="col s6">
-                {{#each brgrs}}
+                {{#each burgers}}
                 {{#if this.devoured}}
                 <div class="brgrConsumed">
                     <div>
@@ -30,12 +30,13 @@
     </div>
 </main>
 
-<h3>Add a Burger Selection</h3>
+<h3>Add your Burger Here</h3>
 
 <div class="row">
-    <div class="col s12">
+    <div class="col s6">
         <form action="/burgers" method="post">
         <input type="text" id="name" name="brgr_name" placeholder="Ya delicious Burrrrgar">
+        <button type="submit" class="plusAburger">One More Burger</button>
         </form>
     </div>
 </div>

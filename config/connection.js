@@ -1,14 +1,18 @@
 //Req. Dependencies 
 var mysql = require('mysql')
-//Local DB
-var connection = mysql.createConnection({
-    port: 3306,
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'da_burgers_db'
-});
-
+//For Heroku deployment and Local Database
+var connection;
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+    connection = mysql.createConnection({
+        port: 3306,
+        host: 'localhost',
+        user: 'root',//your username
+        password: 'root',//your password
+        database: 'da_burgers_db'
+    });
+}
 //Connect to MySQl
 connection.connect(function (err) {
     if (err) {

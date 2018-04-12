@@ -1,7 +1,9 @@
 body{
-    background:darkgoldenrod;
+    background: olivedrab;
 }
-
-.container{
-    background-color: aquamarine;
+.page-footer{
+    background:orange;
+}
+.brgrConsumed{
+    color: orange;
 }

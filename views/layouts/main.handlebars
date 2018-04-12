@@ -10,24 +10,40 @@
     {{!--Compiled and minified CSS --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     {{!-- Compiled and minified JavaScript --}}
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-     {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
-     <script src="handlebars-4.0.2.js"></script>
-    <link rel="stylesheet" href="../../public/assets/css/style.css" type="text/css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css"> 
 
     <title>Da Burger Menu</title>
 </head>
 <body>
+    <nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo center  orange-text">Da Burger!</a>
+    </div>
+  </nav>
     
     {{{ body }}}
-
-    <footer class="burgerFooter">
-        <div class="footer-copyright">
-            <div class="container">
-                <span class="black-text">2018 Sergio Burca</span>
-                <a href="https://github.com/mecaniser/Eat-Da-Burger" class="black-text">GitHUb Repo</a>
+    
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Da Burger</h5>
+                <p class="black-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Git Hub Repo</h5>
+                  <li><a class="white-text waves-effect waves-light btn-small" href="https://github.com/mecaniser/Eat-Da-Burger">Click here</a></li>
+              </div>
             </div>
-        </div>
-    </footer>
+          </div>
+          
+          <div class="footer-copyright">
+            <div class="container black-text">
+            © 2018 Copyright Sergio Burca
+            <a class="violet-text text-lighten-4 right" href="#!">GitHUb Profile</a>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>

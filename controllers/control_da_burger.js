@@ -1,11 +1,16 @@
 //Activate the required NPM's
 var express = require('express');
-
 var router = express.Router();
 
 //To use da_burgers data base functions we have to import its model
 var da_burger = require('../models/da_burger.js');
-//Next we will create the router 
+
+
+
+//Next we will create the routes
+//``````````````````````````````
+
+//Render all new oject to DOM
 router.get('/', function (req, res) {
     da_burger.all(function (info) {
         var nhdlbrsObj = {
@@ -15,9 +20,10 @@ router.get('/', function (req, res) {
         res.render("index", nhdlbrsObj);
     });
 });
-
+//New Fresh Burger
+//Creates new entity
 router.post('/burgers', function (req, res) {
-    da_burger.create([
+    da_burger.createOne([
         'brgr_name'
     ], [
         req.body.brgr_name
@@ -27,25 +33,25 @@ router.post('/burgers', function (req, res) {
 });
 
 router.put('/burgers/:id', function (req, res) {
-    var condition = 'id = ' + req.params.id;
-    console.log("condition", condition);
+    var newBurger = 'id = ' + req.params.id;
+    console.log(" Just Created ", newBurger);
 
-    da_burger.update({
+    da_burger.updateOne({
         devoured: true
-    }, condition, function (info) {
+    }, newBurger, function (info) {
         res.redirect('/');
     });
 });
-router.delete("/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-  
-    da_burger.delete(condition, function(result) {
-      if (result.affectedRows == 0) {
-        // If no rows were changed, then the ID must not exist, so 404
-        return res.status(404).end();
-      } else {
-        res.status(200).end();
-      }
+
+router.delete('/burgers', function (req, res) {
+    var deleteBurger = 'id = ' + req.params.id;
+    console.log("Just Deleted", deleteBurger);
+
+    da_burger.deleteOne({
+        devoured: false
+    }, deleteBurger, function (info) {
+        res.redirect('/');
     });
-  });
+});
+
 module.exports = router;

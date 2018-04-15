@@ -34,7 +34,7 @@ ____
 ---
 
 **ScreenShot Small screen**
->
+**Mobile**
 ![Illustration](public/assets/images/CaptureAppM.PNG)
 
 

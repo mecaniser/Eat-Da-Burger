@@ -1,9 +1,47 @@
 body{
     background: olivedrab;
+    font-family: Gaegu, cursive;
 }
 .page-footer{
     background:orange;
 }
 .brgrConsumed{
-    color: orange;
+    font-family: Gaegu ;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 15px;
+ 	width: 100%;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #b7ffc2;
+     border: inset;
+}
+.available_brgr{
+    font-family: Gaegu, cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: palegoldenrod;
+    border: inset;
+}
+.plusAburger{
+    border-radius: 25px;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    background-color: palegoldenrod;
+    border: groove
+}
+h1{
+    font-size: 4.2rem;
+    line-height: 110%;
+    margin: 2.8rem 0 1.68rem 0;
+    text-align: center;
 }

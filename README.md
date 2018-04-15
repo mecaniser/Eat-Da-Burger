@@ -19,6 +19,14 @@ ____
 
 ![NPM](public/assets/images/npm2.png) ![_BASH terminal_](public/assets/images/bash.png) ![**jQuery**](public/assets/images/jquery.png) ![**Node.js**](public/assets/images/nodejs.png) ![**Express Server**](public/assets/images/expressjs.png) ![**MySQL & ORM**](public/assets/images/mysql.png) ![**Heroku for deployment**](public/assets/images/heroku.png) ![`HTML`](public/assets/images/html5.png) ![``CSS``](public/assets/images/css.png) ![_`Materialize`_ ](public/assets/images/materialize.png)
 
+#How it works
+* _The app executes the basic **CRUD** functions_ 
+* _`READ` all entries from the database will.
+* _Each time a new burger will be *consumed* the `UPDATE` will renew the database_
+* _`CREATE a new burger wich will insert a new item into MySql`_
+* _``DELETE` functionality is missing_
+
+---
 **ScreenShot Full screen**
 ![Illustration](public/assets/images/CaptureApp.PNG)
 

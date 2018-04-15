@@ -1,5 +1,6 @@
 # Da Burger
 > ![Illustration](https://cdn3.iconfinder.com/data/icons/yummicon-pro/100/063_Hamburger-512.png)
+
 **I am curious to hear what your perfect burger is.**
 Click  [BurgerIT](https://safe-dawn-71531.herokuapp.com/) to test the app.
 
@@ -16,7 +17,7 @@ ____
 
 ## Technologies to be used 
 
-* ![NPM](public/assets/images/npm2.png) ![_BASH terminal_](public/assets/images/bash.png) ![**jQuery**](public/assets/images/jquery.png) ![**Node.js**](public/assets/images/nodejs.png)  ![**Express Server**](public/assets/images/expressjs.png) ![**MySQL & ORM**](public/assets/images/mysql.png) ![**Heroku for deployment**](public/assets/images/heroku.png) ![`HTML`](public/assets/images/html5.png) ![``CSS``](public/assets/images/css.png) ![_`Materialize`_ ](public/assets/images/materialize.png)
+![NPM](public/assets/images/npm2.png) ![_BASH terminal_](public/assets/images/bash.png) ![**jQuery**](public/assets/images/jquery.png) ![**Node.js**](public/assets/images/nodejs.png) ![**Express Server**](public/assets/images/expressjs.png) ![**MySQL & ORM**](public/assets/images/mysql.png) ![**Heroku for deployment**](public/assets/images/heroku.png) ![`HTML`](public/assets/images/html5.png) ![``CSS``](public/assets/images/css.png) ![_`Materialize`_ ](public/assets/images/materialize.png)
 
 ## Author
 

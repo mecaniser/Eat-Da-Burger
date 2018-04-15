@@ -1,0 +1,44 @@
+<h1>Eat Da Burger</h1>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <div>
+                    <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                    <button type="submit" class="available_brgr">{{this.brgr_name}}</button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+
+            <div class="col s6">
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="brgrConsumed">
+                    <div>
+                        <form action="/burgers/{{this.id}}?_method=DELETE" method="DELETE">
+                        <button type="submit" class="delete-burger">{{this.brgr_name}}</button>
+                        </form>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</main>
+
+<h3>Add your Burger Here</h3>
+
+<div class="row">
+    <div class="col s6">
+        <form action="/burgers" method="POST">
+        <input type="text" id="name" name="brgr_name" placeholder="Ya delicious Burrrrgar">
+        <button type="submit" class="plusAburger">One More Burger</button>
+        </form>
+    </div>
+</div>

@@ -21,10 +21,10 @@ ____
 
 #How it works
 * _The app executes the basic **CRUD** functions_ 
-* _`READ` all entries from the database will.
+* _ `READ` all entries from the database will.
 * _Each time a new burger will be *consumed* the `UPDATE` will renew the database_
-* _`CREATE a new burger wich will insert a new item into MySql`_
-* _``DELETE` functionality is missing_
+* _ `CREATE a new burger wich will insert a new item into MySql`_
+* _ `DELETE` functionality is missing_
 
 ---
 **ScreenShot Full screen**

@@ -22,6 +22,8 @@ ____
 **ScreenShot Full screen**
 ![Illustration](public/assets/images/CaptureApp.PNG)
 
+---
+
 **ScreenShot Small screen**
 ![Illustration](public/assets/images/CaptureAppM.PNG)
 

@@ -16,7 +16,7 @@ ____
 
 ## Technologies to be used 
 
-* ![NPM](assets/images/npm2.png) |
+* ![NPM](public/assets/images/npm2.png) |
 * [_BASH terminal_]() | 
 * [**jQuery**]() |
 *  [**Node.js**]() |
